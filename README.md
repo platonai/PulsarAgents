@@ -1,4 +1,4 @@
-# 🤖 MyManus
+# 🤖 Myagents
 
 1. Designed to address programmers' daily challenges
 2. A personal toolbox and assistant for developers
@@ -9,7 +9,7 @@
 
 Task: Report China's top 10 cities by GDP:
 
-[![MyManus](https://img.youtube.com/vi/G3EZpnW1tdM/0.jpg)](https://youtu.be/G3EZpnW1tdM)
+[![Myagents](https://img.youtube.com/vi/G3EZpnW1tdM/0.jpg)](https://youtu.be/G3EZpnW1tdM)
 
 ## 🎯 Perform tasks
 
@@ -58,7 +58,7 @@ Additional requirements
 
 Open the project in your IDE.
 
-Open `MyManusApplication` in the editor and click `run`.
+Open `MyagentsApplication` in the editor and click `run`.
 
 ### 🛠️ Run with Maven
 

@@ -7,7 +7,7 @@ spring:
         options:
           model: deepseek-chat
 
-manus:
+agents:
   serp:
     api:
       key: "YOU-SERP-API-KEY"

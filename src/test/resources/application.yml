@@ -3,10 +3,10 @@ server:
 
 spring:
   application:
-    name: my-manus-test
+    name: my-agents-test
   profiles:
     active: private
 
-manus:
+agents:
   browser:
     headless: false

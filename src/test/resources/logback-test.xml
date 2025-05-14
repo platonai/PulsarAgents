@@ -17,6 +17,6 @@
     </root>
 
     <!-- 特定包的日志级别调整 -->
-    <logger name="ai.platon.manus" level="INFO"/>
+    <logger name="ai.platon.agents" level="INFO"/>
 
 </configuration>

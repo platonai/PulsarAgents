@@ -10,12 +10,12 @@
         </encoder>
     </appender>
     <appender name="DRFA" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>logs/manus.log</File>
+        <File>logs/agents.log</File>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%.10thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>logs/manus.log.%d{.yyyy-MM-dd}</fileNamePattern>
+            <fileNamePattern>logs/agents.log.%d{.yyyy-MM-dd}</fileNamePattern>
         </rollingPolicy>
     </appender>
 
@@ -26,6 +26,6 @@
     </root>
 
     <!-- 特定包的日志级别调整 -->
-    <logger name="ai.platon.manus" level="INFO"/>
+    <logger name="ai.platon.agents" level="INFO"/>
 
 </configuration>

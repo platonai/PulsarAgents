@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: my-manus
+    name: my-agents
   banner:
     location: banner.txt
   ai:
@@ -13,6 +13,6 @@ spring:
         stdio:
           servers-configuration: classpath:/mcp-servers-config.json
 
-manus:
+agents:
   browser:
     headless: false

@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ai.platon</groupId>
-    <artifactId>manus</artifactId>
+    <artifactId>agents</artifactId>
     <version>0.0.3-SNAPSHOT</version>
 
-    <name>My Manus</name>
-    <description>My Manus</description>
+    <name>Pulsar Agents</name>
+    <description>Pulsar Agents</description>
 
     <build>
         <defaultGoal>package</defaultGoal>
@@ -126,14 +126,14 @@
                     TODO: failed to build image, can not connect to registry-1.docker.io without proxy, and can not connect to local proxy, need a solution
                     -->
 <!--                    <image>-->
-<!--                        <name>platonai/my-manus</name>-->
+<!--                        <name>platonai/my-agents</name>-->
 <!--                        &lt;!&ndash; Sadly, there are still problems to run  &ndash;&gt;-->
 <!--                        <builder>paketobuildpacks/builder:tiny</builder>-->
 <!--                        <env>-->
 <!--                            <BP_NATIVE_IMAGE>true</BP_NATIVE_IMAGE> &lt;!&ndash; Enable native image build &ndash;&gt;-->
 <!--                        </env>-->
 <!--                    </image>-->
-                    <mainClass>ai.platon.manus.api.MyApplicationKt</mainClass>
+                    <mainClass>ai.platon.agents.api.MyApplicationKt</mainClass>
                 </configuration>
             </plugin>
         </plugins>
