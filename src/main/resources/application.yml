@@ -1,0 +1,18 @@
+server:
+  port: 8185
+
+spring:
+  application:
+    name: my-manus
+  banner:
+    location: banner.txt
+  ai:
+    mcp:
+      client:
+        request-timeout: 60000
+        stdio:
+          servers-configuration: classpath:/mcp-servers-config.json
+
+manus:
+  browser:
+    headless: false
