@@ -50,10 +50,10 @@ class SerpApiService(
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonClassDescription("serpapi search request")
     data class Request(
-        @field:JsonPropertyDescription("The query keyword, e.g. Myagents")
+        @field:JsonPropertyDescription("The query keyword, e.g. PulsarAgents")
         @field:JsonProperty(required = true, value = "query")
         @param:JsonProperty(required = true, value = "query")
-        @param:JsonPropertyDescription("The query keyword, e.g. Myagents")
+        @param:JsonPropertyDescription("The query keyword, e.g. PulsarAgents")
         val query: String = ""
     )
 

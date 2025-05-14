@@ -13,7 +13,7 @@ class MinesweeperApplication(
 ### 📌 产品需求文档：Minesweeper 游戏（扫雷）
 
 **产品经理：** ivincent.zhang@gmail.com
-**开发负责人：** Myagents
+**开发负责人：** PulsarAgents
 **版本：** v1.0
 **发布日期：** TBD
 

@@ -19,7 +19,7 @@ import org.springframework.web.client.RestClient
 import java.util.concurrent.TimeUnit
 
 @Configuration
-class MyagentsConfiguration {
+class PulsarAgentsConfiguration {
     @Value("\${agents.serp.api.key}")
     lateinit var serpApiKey: String
 
@@ -27,7 +27,7 @@ class MyagentsConfiguration {
     fun planningFlow(llmService: LlmService, toolCallingManager: ToolCallingManager): PlanningFlow {
         GoogleSearch.INSTANCE.serp.apikey = serpApiKey
 
-        val agentsAgent = MyagentsAgent(llmService, toolCallingManager, MyContext.AGENT_WORKING_DIR)
+        val agentsAgent = PulsarAgents(llmService, toolCallingManager, MyContext.AGENT_WORKING_DIR)
         val browserAgent = BrowserAgent(llmService, toolCallingManager)
         val fileAgent = FileAgent(llmService, toolCallingManager, MyContext.AGENT_WORKING_DIR)
         val pythonAgent = PythonAgent(llmService, toolCallingManager, MyContext.AGENT_WORKING_DIR)

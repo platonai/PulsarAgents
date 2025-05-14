@@ -1,7 +1,7 @@
 package ai.platon.agents.agent.plan
 
 import ai.platon.agents.agent.MyAgent
-import ai.platon.agents.agent.MyagentsAgent
+import ai.platon.agents.agent.PulsarAgents
 import ai.platon.agents.api.service.LlmService
 import ai.platon.agents.tool.PlanningTool
 import ai.platon.agents.tool.support.ToolExecuteResult
@@ -298,7 +298,7 @@ class PlanningFlow(
             return agent
         }
 
-        var backup = agents.firstOrNull { it.name.equals(MyagentsAgent.NAME, ignoreCase = true) }
+        var backup = agents.firstOrNull { it.name.equals(PulsarAgents.NAME, ignoreCase = true) }
         if (backup != null) {
             return backup
         }

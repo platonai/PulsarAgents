@@ -25,7 +25,7 @@ class LlmService(
         .defaultAdvisors(MessageChatMemoryAdvisor(planningMemory)).defaultAdvisors(SimpleLoggerAdvisor())
         .defaultTools(toolCallbackProvider).build()
 
-    val chatClient = ChatClient.builder(chatModel).defaultSystem(agents_SYSTEM_PROMPT)
+    val chatClient = ChatClient.builder(chatModel).defaultSystem(PULSAR_AGENTS_SYSTEM_PROMPT)
         .defaultAdvisors(MessageChatMemoryAdvisor(memory)).defaultAdvisors(SimpleLoggerAdvisor())
         .defaultTools(toolCallbackProvider)
         .defaultOptions(OpenAiChatOptions.builder().internalToolExecutionEnabled(false).build()).build()

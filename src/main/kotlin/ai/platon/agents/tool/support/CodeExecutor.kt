@@ -31,7 +31,7 @@ object CodeExecutor {
 
         val destination = filename ?: "my.${RandomStringUtils.randomAlphanumeric(12)}.$lang"
         val path = Paths.get(workDir)
-            .resolve("generated-sources/myagents")
+            .resolve("generated-sources/PulsarAgents")
             .resolve(destination)
         Files.createDirectories(path.parent)
         Files.writeString(path, code)

@@ -6,13 +6,13 @@ import org.apache.commons.lang3.SystemUtils
 import org.springframework.ai.model.tool.ToolCallingManager
 import org.springframework.ai.tool.ToolCallback
 
-class MyagentsAgent(
+class PulsarAgents(
     llmService: LlmService,
     toolCallingManager: ToolCallingManager,
     private val workingDirectory: String
 ) : ToolCallAgent(llmService, toolCallingManager) {
     companion object {
-        const val NAME = "Myagents"
+        const val NAME = "PulsarAgents"
     }
 
     override val name: String = NAME

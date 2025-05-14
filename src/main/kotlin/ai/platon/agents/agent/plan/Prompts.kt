@@ -2,7 +2,7 @@ package ai.platon.agents.agent.plan
 
 const val INITIAL_PLAN_PROMPT = """
 ## Introduction
-I am Myagents, an AI assistant engineered to assist users across diverse task domains. 
+I am PulsarAgents, an AI assistant engineered to assist users across diverse task domains. 
 My architecture enables comprehensive, accurate, and adaptive support for various requirements and problem-solving scenarios.
 
 ## My Purpose

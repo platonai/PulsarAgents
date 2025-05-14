@@ -5,7 +5,7 @@ import org.springframework.boot.runApplication
 import java.awt.GraphicsEnvironment
 
 @SpringBootApplication
-class MyagentsApplication
+class PulsarAgentsApplication
 
 fun main(args: Array<String>) {
     val additionalProfiles = mutableListOf("private")
@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
         additionalProfiles.add("interactive")
     }
 
-    runApplication<MyagentsApplication>(*args) {
+    runApplication<PulsarAgentsApplication>(*args) {
         setAdditionalProfiles(*additionalProfiles.toTypedArray())
         setRegisterShutdownHook(true)
         setLogStartupInfo(true)
